@@ -16,6 +16,7 @@
 		AD64359A2312D0BC00E22B00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6435992312D0BC00E22B00 /* README.md */; };
 		D4C3533529C75BC800400554 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3533429C75BC800400554 /* ResultViewController.swift */; };
 		D4C3533729C8B10100400554 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3533629C8B10100400554 /* CalculatorBrain.swift */; };
+		D4C3533C29C8C31400400554 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4C3533B29C8C31400400554 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AD6435992312D0BC00E22B00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D4C3533429C75BC800400554 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D4C3533629C8B10100400554 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "BMI Calculator/Model/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
+		D4C3533B29C8C31400400554 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D4C3533629C8B10100400554 /* CalculatorBrain.swift */,
+				D4C3533B29C8C31400400554 /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */,
 				AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */,
 				D4C3533729C8B10100400554 /* CalculatorBrain.swift in Sources */,
+				D4C3533C29C8C31400400554 /* BMI.swift in Sources */,
 				D4C3533529C75BC800400554 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

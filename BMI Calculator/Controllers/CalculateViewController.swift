@@ -25,12 +25,12 @@ class CalculateViewController: UIViewController {
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         calculatorBrain.setHeight(userHeight: sender.value)
-        updateUI()
+        heightLabel.text = "\(calculatorBrain.getHeight())m"
     }
 
     @IBAction func weightSliderChange(_ sender: UISlider) {
         calculatorBrain.setWeight(userWeight: sender.value)
-        updateUI()
+        weightLabel.text = "\(calculatorBrain.getWeight())kg"
     }
     
     
@@ -39,18 +39,12 @@ class CalculateViewController: UIViewController {
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
-    
-    
-    func updateUI() {
-        heightLabel.text = "\(calculatorBrain.getHeight())m"
-        weightLabel.text = "\(calculatorBrain.getWeight())kg"
-    }
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "goToResult") {
             let destinationVC = segue.destination as! ResultViewController
-            destinationVC.bmiValue = calculatorBrain.getBmiValue()
+            destinationVC.bmiValue = String(format: "%.1f", calculatorBrain.getBmi()!.value)
+            destinationVC.advice = calculatorBrain.getBmi()?.advice
+            destinationVC.tintColor = calculatorBrain.getBmi()?.color
         }
     }
     
